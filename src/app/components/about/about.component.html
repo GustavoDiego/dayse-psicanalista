@@ -1,0 +1,62 @@
+<section id="sobre" class="section about">
+  <div class="section__container about__grid">
+    <!-- Photo -->
+    <div class="about__photo-wrap" appFadeIn appFadeInDirection="left">
+      <div class="about__photo-frame">
+        <img
+          src="images/psychoanalyst-placeholder.png"
+          alt="Foto da Psicanalista"
+          loading="lazy"
+          class="about__photo"
+        >
+        <div class="about__photo-border"></div>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div class="about__content">
+      <span class="section__label" appFadeIn [appFadeInDelay]="1">Sobre Mim</span>
+      <div class="gold-line" appFadeIn [appFadeInDelay]="1"></div>
+
+      <h2 class="section__title" appFadeIn [appFadeInDelay]="2">
+        Cada pessoa carrega uma <span class="text-gold">história</span> que merece ser escutada
+      </h2>
+
+      <p class="section__text" appFadeIn [appFadeInDelay]="3">
+        Sou psicanalista clínica com formação sólida e prática dedicada ao acolhimento
+        humano. Acredito que o processo analítico é um convite à coragem — a coragem
+        de olhar para dentro, de questionar padrões e de descobrir novas possibilidades
+        de existir.
+      </p>
+
+      <p class="section__text" appFadeIn [appFadeInDelay]="4">
+        Meu trabalho é criar um espaço onde a palavra encontra liberdade, onde o
+        silêncio também fala, e onde cada sessão é um passo em direção a uma vida
+        mais autêntica e consciente.
+      </p>
+
+      <div class="about__credentials" appFadeIn [appFadeInDelay]="5">
+        <div class="about__credential">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          <span>Psicanalista Clínica</span>
+        </div>
+        <div class="about__credential">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+            <path d="M22 4L12 14.01l-3-3"/>
+          </svg>
+          <span>CRP 00/00000</span>
+        </div>
+        <div class="about__credential">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+          </svg>
+          <span>Atendimento Online e Presencial</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,84 @@
+.reflections {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 56px;
+  }
+
+  &__card {
+    background: var(--black-card);
+    border: 1px solid rgba(201, 168, 76, 0.08);
+    padding: 48px 32px 40px;
+    text-align: center;
+    position: relative;
+    transition: all 0.4s ease;
+
+    &:hover {
+      border-color: rgba(201, 168, 76, 0.2);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__quote-mark {
+    font-family: var(--font-heading);
+    font-size: 5rem;
+    line-height: 1;
+    color: var(--gold);
+    opacity: 0.2;
+    position: absolute;
+    top: 16px;
+    left: 28px;
+  }
+
+  &__text {
+    font-family: var(--font-heading);
+    font-style: italic;
+    font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--white-soft);
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__divider {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    margin: 24px auto;
+    opacity: 0.4;
+  }
+
+  &__cite {
+    font-family: var(--font-body);
+    font-style: normal;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+}
+
+@media (min-width: 768px) {
+  .reflections {
+    &__card {
+      padding: 56px 48px 44px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .reflections {
+    &__list {
+      gap: 40px;
+    }
+
+    &__card {
+      padding: 64px 60px 52px;
+    }
+  }
+}

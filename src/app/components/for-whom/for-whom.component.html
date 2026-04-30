@@ -1,0 +1,38 @@
+<section id="para-quem" class="section for-whom">
+  <div class="section__container">
+    <div class="for-whom__header text-center">
+      <span class="section__label" appFadeIn>Para Quem</span>
+      <div class="gold-line gold-line--center" appFadeIn></div>
+
+      <h2 class="section__title" appFadeIn [appFadeInDelay]="1">
+        A psicanálise é para <span class="text-gold">você</span>
+      </h2>
+
+      <p class="section__text" appFadeIn [appFadeInDelay]="2">
+        Não é preciso estar em crise para buscar análise. A psicanálise é para
+        quem deseja se conhecer, se transformar e viver com mais consciência.
+      </p>
+    </div>
+
+    <div class="for-whom__grid">
+      @for (item of items; track item.title; let i = $index) {
+        <div
+          class="for-whom__item"
+          appFadeIn
+          [appFadeInDelay]="(i % 3) + 1"
+          appFadeInDirection="scale"
+        >
+          <div class="for-whom__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path [attr.d]="item.icon"/>
+            </svg>
+          </div>
+          <div class="for-whom__text">
+            <h3 class="for-whom__title">{{ item.title }}</h3>
+            <p class="for-whom__desc">{{ item.text }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

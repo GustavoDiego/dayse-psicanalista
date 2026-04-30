@@ -1,0 +1,321 @@
+/* ============================================
+   DESIGN SYSTEM — Psicanalista Premium
+   Paleta: Dourado, Preto, Branco
+   Tipografia: Cormorant Garamond + DM Sans
+   ============================================ */
+
+/* ---------- CSS Reset ---------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------- Design Tokens ---------- */
+:root {
+  /* Colors */
+  --black: #0A0A0A;
+  --black-soft: #1A1A1A;
+  --black-card: #141414;
+  --black-overlay: rgba(10, 10, 10, 0.85);
+  --white: #FFFFFF;
+  --white-soft: #E8E8E8;
+  --white-muted: #B0B0B0;
+  --gold: #C9A84C;
+  --gold-light: #D4B95E;
+  --gold-dark: #A88A3A;
+  --gold-muted: rgba(201, 168, 76, 0.15);
+  --gold-gradient: linear-gradient(135deg, #C9A84C, #D4B95E, #A88A3A);
+  --gold-text-gradient: linear-gradient(135deg, #D4B95E, #C9A84C, #A88A3A);
+
+  /* Typography */
+  --font-heading: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'DM Sans', 'Helvetica Neue', sans-serif;
+
+  /* Spacing */
+  --section-padding-mobile: 80px 24px;
+  --section-padding-tablet: 100px 48px;
+  --section-padding-desktop: 120px 80px;
+
+  /* Sizes */
+  --max-width: 1200px;
+  --border-radius: 8px;
+  --border-radius-lg: 16px;
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 200ms;
+  --duration-normal: 400ms;
+  --duration-slow: 800ms;
+}
+
+/* ---------- Base ---------- */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--white-soft);
+  background-color: var(--black);
+  overflow-x: hidden;
+}
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 500;
+}
+
+p {
+  font-size: clamp(1rem, 1.1vw, 1.15rem);
+  line-height: 1.8;
+  color: var(--white-muted);
+  max-width: 680px;
+}
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+a:hover {
+  color: var(--gold-light);
+}
+
+/* ---------- Utility Classes ---------- */
+.section {
+  padding: var(--section-padding-mobile);
+  position: relative;
+}
+
+.section--alt {
+  background-color: var(--black-soft);
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section__label {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.section__title {
+  margin-bottom: 24px;
+}
+
+.section__text {
+  margin-bottom: 40px;
+}
+
+.gold-line {
+  width: 60px;
+  height: 1px;
+  background: var(--gold-gradient);
+  margin-bottom: 32px;
+}
+
+.gold-line--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-center p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Gold Text Gradient ---------- */
+.text-gold {
+  background: var(--gold-text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 18px 40px;
+  border: 1px solid var(--gold);
+  border-radius: 0;
+  cursor: pointer;
+  transition: all var(--duration-normal) var(--ease-out);
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--gold-gradient);
+  transition: left var(--duration-normal) var(--ease-out);
+  z-index: 0;
+}
+
+.btn:hover::before {
+  left: 0;
+}
+
+.btn span,
+.btn svg {
+  position: relative;
+  z-index: 1;
+}
+
+.btn--primary {
+  background: transparent;
+  color: var(--gold);
+}
+
+.btn--primary:hover {
+  color: var(--black);
+  border-color: var(--gold-light);
+}
+
+.btn--gold {
+  background: var(--gold-gradient);
+  color: var(--black);
+  border-color: transparent;
+}
+
+.btn--gold::before {
+  background: var(--gold-light);
+}
+
+.btn--gold:hover {
+  color: var(--black);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(201, 168, 76, 0.3);
+}
+
+/* ---------- Fade-in Animation Classes ---------- */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity var(--duration-slow) var(--ease-out),
+              transform var(--duration-slow) var(--ease-out);
+}
+
+.fade-in--left {
+  transform: translateX(-30px);
+}
+
+.fade-in--right {
+  transform: translateX(30px);
+}
+
+.fade-in--scale {
+  transform: scale(0.95);
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Stagger delays */
+.fade-in-delay-1 { transition-delay: 100ms; }
+.fade-in-delay-2 { transition-delay: 200ms; }
+.fade-in-delay-3 { transition-delay: 300ms; }
+.fade-in-delay-4 { transition-delay: 400ms; }
+.fade-in-delay-5 { transition-delay: 500ms; }
+.fade-in-delay-6 { transition-delay: 600ms; }
+
+/* ---------- Scrollbar ---------- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gold-dark);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* ---------- Selection ---------- */
+::selection {
+  background: var(--gold-muted);
+  color: var(--white);
+}
+
+/* ---------- Responsive ---------- */
+@media (min-width: 768px) {
+  .section {
+    padding: var(--section-padding-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: var(--section-padding-desktop);
+  }
+}
+
+/* ---------- Img defaults ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

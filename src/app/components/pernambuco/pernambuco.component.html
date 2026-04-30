@@ -1,0 +1,54 @@
+<section id="pernambuco" class="section pernambuco">
+  <div class="section__container pernambuco__grid">
+    <!-- Text content -->
+    <div class="pernambuco__content">
+      <span class="section__label" appFadeIn>Raízes</span>
+      <div class="gold-line" appFadeIn></div>
+
+      <h2 class="section__title" appFadeIn [appFadeInDelay]="1">
+        Orgulhosamente <span class="text-gold">Pernambucana</span>
+      </h2>
+
+      <p class="section__text" appFadeIn [appFadeInDelay]="2">
+        Minha prática clínica é atravessada pelas minhas raízes. Pernambuco
+        — terra de força, cultura e resistência — moldou meu olhar sobre
+        o humano. É dessa terra que vem a sensibilidade e a coragem que
+        trago para cada sessão.
+      </p>
+
+      <p class="section__text" appFadeIn [appFadeInDelay]="3">
+        Atender de Pernambuco para o mundo é carregar essa identidade
+        com orgulho, conectando a riqueza cultural do Nordeste à profundidade
+        da escuta psicanalítica.
+      </p>
+
+      <!-- Bandeira de Pernambuco -->
+      <div class="pernambuco__flag" appFadeIn [appFadeInDelay]="4">
+        <svg viewBox="0 0 600 400" class="pernambuco__flag-img" xmlns="http://www.w3.org/2000/svg" aria-label="Bandeira do estado de Pernambuco" role="img">
+          <!-- Fundo Azul e Branco -->
+          <rect width="600" height="200" fill="#003882"/>
+          <rect y="200" width="600" height="200" fill="#FFFFFF"/>
+          <!-- Arco-íris -->
+          <path d="M 150 200 A 150 150 0 0 1 450 200" fill="none" stroke="#E62310" stroke-width="20"/>
+          <path d="M 170 200 A 130 130 0 0 1 430 200" fill="none" stroke="#F1E800" stroke-width="20"/>
+          <path d="M 190 200 A 110 110 0 0 1 410 200" fill="none" stroke="#009640" stroke-width="20"/>
+          <!-- Estrela -->
+          <polygon points="300,30 310,65 345,65 315,85 325,120 300,100 275,120 285,85 255,65 290,65" fill="#F1E800"/>
+          <!-- Sol -->
+          <circle cx="300" cy="140" r="25" fill="#F1E800"/>
+          <path d="M300 95 L300 110 M300 170 L300 185 M255 140 L270 140 M330 140 L345 140 M265 105 L275 115 M325 165 L335 175 M265 175 L275 165 M325 115 L335 105" stroke="#F1E800" stroke-width="6" stroke-linecap="round"/>
+          <!-- Cruz -->
+          <rect x="285" y="240" width="30" height="120" fill="#E62310"/>
+          <rect x="240" y="270" width="120" height="30" fill="#E62310"/>
+        </svg>
+        <span class="pernambuco__flag-label">Leão do Norte</span>
+      </div>
+    </div>
+
+    <!-- Mapa de Pernambuco -->
+    <div class="pernambuco__map-wrap" appFadeIn appFadeInDirection="right" [appFadeInDelay]="2">
+      <div class="pernambuco__map" role="img" aria-label="Silhueta do mapa de Pernambuco"></div>
+      <div class="pernambuco__map-glow"></div>
+    </div>
+  </div>
+</section>
