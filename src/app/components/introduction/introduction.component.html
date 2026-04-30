@@ -1,0 +1,31 @@
+<section id="introducao" class="section introduction">
+    <div class="section__container introduction__grid">
+        <div class="introduction__content">
+            <span class="section__label" appFadeIn>Introdução</span>
+            <div class="gold-line" appFadeIn></div>
+
+            <h2 class="section__title" appFadeIn [appFadeInDelay]="1">
+                Um primeiro olhar sobre a <span class="text-gold">psicanálise</span>
+            </h2>
+
+            <p class="section__text" appFadeIn [appFadeInDelay]="2">
+                Um breve vídeo para apresentar a essência da escuta psicanalítica e o papel
+                do inconsciente nas escolhas e nos sentimentos do dia a dia.
+            </p>
+
+            <p class="introduction__note" appFadeIn [appFadeInDelay]="3">
+                Vídeo de demonstração
+            </p>
+        </div>
+
+        <div class="introduction__media" appFadeIn appFadeInDirection="right" [appFadeInDelay]="2">
+            <div class="introduction__frame">
+                <iframe src="https://www.youtube.com/embed/BSZWNNsyXIE" title="Introdução à psicanálise"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <span class="introduction__caption">Uma introdução ao olhar psicanalítico</span>
+        </div>
+    </div>
+</section>

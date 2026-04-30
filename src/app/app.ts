@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { IntroductionComponent } from './components/introduction/introduction.component';
 import { AboutComponent } from './components/about/about.component';
 import { ApproachComponent } from './components/approach/approach.component';
 import { ForWhomComponent } from './components/for-whom/for-whom.component';
@@ -16,6 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     HeaderComponent,
     HeroComponent,
+    IntroductionComponent,
     AboutComponent,
     ApproachComponent,
     ForWhomComponent,
@@ -29,5 +31,5 @@ import { FooterComponent } from './components/footer/footer.component';
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = 'Psicanalista';
+  protected readonly title = 'Dayse Sandra';
 }
