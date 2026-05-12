@@ -57,6 +57,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/dayse-psicanalista/",
               "budgets": [
                 {
                   "type": "initial",
