@@ -11,16 +11,12 @@ import { FadeInDirective } from '../../directives/fade-in.directive';
 export class ReflectionsComponent {
   reflections = [
     {
-      text: 'O inconsciente não é um lugar escuro a ser temido — é um território vasto de possibilidades, onde mora tudo aquilo que ainda não tivemos coragem de nomear.',
-      title: 'Sobre o inconsciente'
+      text: 'A neurose é o esconderijo da dor inconsciente. A psicanálise abre a porta para libertar o seu eu reprimido. A repressão é um chip implantado para que você viva um falso self, criado na infância para adaptação de um ambiente hostil e insuficiente, resultando em submissão às demandas externas, sentimentos de vazio e falta de autenticidade na vida adulta. Para os pais ou tutores, a repressão é considerada zelo e proteção. Freud nunca foi a favor da falta de limite; para ele, o ponto central é o princípio da realidade. É no princípio da realidade onde o papel dos pais é ajudar a criança a transitar do princípio do prazer - "quero tudo agora" - para o princípio da realidade - "preciso esperar ou agir de outra forma". A repressão excessiva gera neurose e sofrimento psíquico, mas a falta total de limites impediria a formação do ego e do superego, tornando a convivência impossível.',
+      title: 'Sobre a repressão'
     },
     {
-      text: 'Escutar-se é um ato revolucionário. Numa cultura que nos ensina a silenciar a dor, escolher falar sobre ela é o primeiro passo para a liberdade.',
-      title: 'Sobre a escuta'
-    },
-    {
-      text: 'A análise não é consertar o que está quebrado. É descobrir que, mesmo nas fraturas, há beleza — e que é justamente por elas que a luz entra.',
-      title: 'Sobre o processo'
+      text: 'Os pais favorecem as crianças quando conseguem ser firmes para que elas saiam da fantasia da onipotência, mas suaves o bastante para que elas não precisem se esconder na neurose para suportar a realidade.',
+      title: 'Sobre limites e acolhimento'
     }
   ];
 }

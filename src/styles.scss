@@ -16,19 +16,21 @@
 /* ---------- Design Tokens ---------- */
 :root {
   /* Colors */
-  --black: #0A0A0A;
-  --black-soft: #1A1A1A;
-  --black-card: #141414;
-  --black-overlay: rgba(10, 10, 10, 0.85);
-  --white: #FFFFFF;
-  --white-soft: #E8E8E8;
-  --white-muted: #B0B0B0;
-  --gold: #C9A84C;
-  --gold-light: #D4B95E;
-  --gold-dark: #A88A3A;
-  --gold-muted: rgba(201, 168, 76, 0.15);
-  --gold-gradient: linear-gradient(135deg, #C9A84C, #D4B95E, #A88A3A);
-  --gold-text-gradient: linear-gradient(135deg, #D4B95E, #C9A84C, #A88A3A);
+  --black: #969590;
+  --black-soft: #A2A19D;
+  --black-card: #8F8E8A;
+  --black-overlay: rgba(150, 149, 144, 0.85);
+  --bg-radial: radial-gradient(circle at 18% 12%, #B4B3AF 0%, #A2A19D 46%, #8F8E8A 100%);
+  --bg-radial-alt: radial-gradient(circle at 82% 18%, #BBBAB6 0%, #A8A7A3 48%, #969590 100%);
+  --white: #343338;
+  --white-soft: #343338;
+  --white-muted: #343338;
+  --gold: #6F1D2A;
+  --gold-light: #8C2B3D;
+  --gold-dark: #53131E;
+  --gold-muted: rgba(111, 29, 42, 0.15);
+  --gold-gradient: linear-gradient(135deg, #8C2B3D, #6F1D2A, #53131E);
+  --gold-text-gradient: linear-gradient(135deg, #A43A4D, #7A2231, #53131E);
 
   /* Typography */
   --font-heading: 'Cormorant Garamond', 'Georgia', serif;
@@ -65,12 +67,17 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: var(--white-soft);
-  background-color: var(--black);
+  background: var(--bg-radial);
   overflow-x: hidden;
 }
 
 /* ---------- Typography ---------- */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: 400;
   line-height: 1.2;
@@ -118,7 +125,7 @@ a:hover {
 }
 
 .section--alt {
-  background-color: var(--black-soft);
+  background: var(--bg-radial-alt);
 }
 
 .section__container {
@@ -248,7 +255,7 @@ a:hover {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity var(--duration-slow) var(--ease-out),
-              transform var(--duration-slow) var(--ease-out);
+    transform var(--duration-slow) var(--ease-out);
 }
 
 .fade-in--left {
@@ -269,12 +276,29 @@ a:hover {
 }
 
 /* Stagger delays */
-.fade-in-delay-1 { transition-delay: 100ms; }
-.fade-in-delay-2 { transition-delay: 200ms; }
-.fade-in-delay-3 { transition-delay: 300ms; }
-.fade-in-delay-4 { transition-delay: 400ms; }
-.fade-in-delay-5 { transition-delay: 500ms; }
-.fade-in-delay-6 { transition-delay: 600ms; }
+.fade-in-delay-1 {
+  transition-delay: 100ms;
+}
+
+.fade-in-delay-2 {
+  transition-delay: 200ms;
+}
+
+.fade-in-delay-3 {
+  transition-delay: 300ms;
+}
+
+.fade-in-delay-4 {
+  transition-delay: 400ms;
+}
+
+.fade-in-delay-5 {
+  transition-delay: 500ms;
+}
+
+.fade-in-delay-6 {
+  transition-delay: 600ms;
+}
 
 /* ---------- Scrollbar ---------- */
 ::-webkit-scrollbar {

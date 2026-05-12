@@ -11,24 +11,19 @@ import { FadeInDirective } from '../../directives/fade-in.directive';
 export class CredentialsComponent {
   credentials = [
     {
-      year: '2024',
-      title: 'Especialização em Psicanálise Clínica',
-      institution: 'Instituto de Psicanálise'
+      year: '2007',
+      title: 'Início da trajetória em psicanálise',
+      institution: 'Consolidação de uma escuta que alia experiência de vida e rigor técnico'
     },
     {
-      year: '2022',
-      title: 'Formação em Psicologia Clínica',
-      institution: 'Universidade Federal de Pernambuco'
+      year: 'Formação',
+      title: 'Associação Brasileira de Estudos Psicanalíticos (ABEP-Recife)',
+      institution: 'Base teórica e técnica para acompanhar o sujeito no desvelar de suas verdades inconscientes'
     },
     {
-      year: '2021',
-      title: 'Curso de Extensão em Escuta Analítica',
-      institution: 'Sociedade Psicanalítica'
-    },
-    {
-      year: '2020',
-      title: 'Graduação em Psicologia',
-      institution: 'Universidade Federal de Pernambuco'
+      year: 'Atuação',
+      title: 'Percurso ético e sensível',
+      institution: 'Foco em transformar a repetição do sofrimento em possibilidade de autoria da própria história'
     }
   ];
 }

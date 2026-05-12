@@ -6,11 +6,9 @@
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(
-        ellipse at center,
+      radial-gradient(ellipse at center,
         rgba(201, 168, 76, 0.06) 0%,
-        transparent 60%
-      );
+        transparent 60%);
     pointer-events: none;
   }
 
@@ -70,5 +68,29 @@
       color: var(--white-muted);
       letter-spacing: 0.05em;
     }
+  }
+
+  &__practical {
+    margin-top: 32px;
+  }
+
+  &__practical-title {
+    font-size: 0.85rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+
+  &__practical-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 560px;
+    display: grid;
+    gap: 10px;
+    color: var(--white-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
   }
 }
