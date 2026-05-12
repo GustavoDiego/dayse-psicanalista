@@ -3,7 +3,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
 import { ReflectionsComponent } from './components/reflections/reflections.component';
-import { CredentialsComponent } from './components/credentials/credentials.component';
 import { CtaComponent } from './components/cta/cta.component';
 import { FooterComponent } from './components/footer/footer.component';
 
@@ -15,7 +14,6 @@ import { FooterComponent } from './components/footer/footer.component';
     HeroComponent,
     AboutComponent,
     ReflectionsComponent,
-    CredentialsComponent,
     CtaComponent,
     FooterComponent
   ],
