@@ -21,5 +21,5 @@ import { FooterComponent } from './components/footer/footer.component';
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = 'Dayse Sandra';
+  protected readonly title = 'Dayse Silva';
 }

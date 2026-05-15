@@ -34,30 +34,6 @@
     margin-top: 8px;
   }
 
-  &__social {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 32px;
-  }
-
-  &__social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border: 1px solid rgba(201, 168, 76, 0.2);
-    color: var(--white-muted);
-    transition: all 0.3s ease;
-
-    &:hover {
-      color: var(--gold);
-      border-color: var(--gold);
-      background: rgba(201, 168, 76, 0.06);
-      transform: translateY(-2px);
-    }
-  }
-
   &__divider {
     width: 100%;
     max-width: 200px;

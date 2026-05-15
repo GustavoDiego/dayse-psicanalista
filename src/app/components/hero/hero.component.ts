@@ -9,5 +9,5 @@ import { FadeInDirective } from '../../directives/fade-in.directive';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-  whatsappLink = 'https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta.';
+  whatsappLink = 'https://wa.me/5581996656998?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta.';
 }
