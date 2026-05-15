@@ -3,30 +3,20 @@
     <span class="section__label" appFadeIn>Reflexões</span>
     <div class="gold-line gold-line--center" appFadeIn></div>
 
-    <h2 class="section__title" appFadeIn [appFadeInDelay]="1">
-      Palavras que <span class="text-gold">ecoam</span>
-    </h2>
-
-    <p class="section__text" appFadeIn [appFadeInDelay]="2">
-      Textos e reflexões da minha prática clínica — fragmentos de um olhar
-      que se constrói entre a escuta e a palavra.
-    </p>
   </div>
 
   <div class="reflections__list section__container">
     @for (item of reflections; track item.title; let i = $index) {
-      <div
-        class="reflections__card"
-        appFadeIn
-        [appFadeInDelay]="i + 1"
-      >
-        <div class="reflections__quote-mark">"</div>
-        <blockquote class="reflections__text">
-          {{ item.text }}
-        </blockquote>
-        <div class="reflections__divider"></div>
-        <cite class="reflections__cite">{{ item.title }}</cite>
-      </div>
+    <div class="reflections__card" appFadeIn [appFadeInDelay]="i + 1">
+      <div class="reflections__quote-mark">"</div>
+      <blockquote class="reflections__text">
+        {{ item.text }}
+      </blockquote>
+      <div class="reflections__divider"></div>
+      @if (item.title && item.showTitle !== false) {
+      <cite class="reflections__cite">{{ item.title }}</cite>
+      }
+    </div>
     }
   </div>
 </section>

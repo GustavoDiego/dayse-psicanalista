@@ -11,12 +11,34 @@ import { FadeInDirective } from '../../directives/fade-in.directive';
 export class ReflectionsComponent {
   reflections = [
     {
-      text: 'A neurose é o esconderijo da dor inconsciente. A psicanálise abre a porta para libertar o seu eu reprimido. A repressão é um chip implantado para que você viva um falso self, criado na infância para adaptação de um ambiente hostil e insuficiente, resultando em submissão às demandas externas, sentimentos de vazio e falta de autenticidade na vida adulta. Para os pais ou tutores, a repressão é considerada zelo e proteção. Freud nunca foi a favor da falta de limite; para ele, o ponto central é o princípio da realidade. É no princípio da realidade onde o papel dos pais é ajudar a criança a transitar do princípio do prazer - "quero tudo agora" - para o princípio da realidade - "preciso esperar ou agir de outra forma". A repressão excessiva gera neurose e sofrimento psíquico, mas a falta total de limites impediria a formação do ego e do superego, tornando a convivência impossível.',
-      title: 'Sobre a repressão'
+      text: 'A neurose é o esconderijo da dor inconsciente. A psicanálise abre a porta para libertar o seu eu reprimido.',
+      title: 'Sobre a repressão',
+      showTitle: false
     },
     {
-      text: 'Os pais favorecem as crianças quando conseguem ser firmes para que elas saiam da fantasia da onipotência, mas suaves o bastante para que elas não precisem se esconder na neurose para suportar a realidade.',
-      title: 'Sobre limites e acolhimento'
+      text: 'A repressão é um chip implantado para que você viva um falso self, criado na infância para adaptação de um ambiente hostil e insuficiente.',
+      title: 'Sobre a repressão',
+      showTitle: false
+    },
+    {
+      text: 'Isso resulta em submissão às demandas externas, sentimentos de vazio e falta de autenticidade na vida adulta.',
+      title: 'Sobre a repressão',
+      showTitle: false
+    },
+    {
+      text: 'Para pais ou tutores, a repressão é considerada zelo e proteção. Mas Freud ensina: o ponto central é o Princípio da Realidade.',
+      title: 'Sobre limites e acolhimento',
+      showTitle: false
+    },
+    {
+      text: 'O papel dos pais é ajudar a criança a transitar do Princípio do Prazer (quero tudo agora) para o Princípio da Realidade (preciso esperar).',
+      title: 'Sobre limites e acolhimento',
+      showTitle: false
+    },
+    {
+      text: 'A repressão excessiva gera neurose, mas a falta de limites impediria a formação do Ego, tornando a convivência impossível.',
+      title: 'Sobre limites e acolhimento',
+      showTitle: false
     }
   ];
 }
