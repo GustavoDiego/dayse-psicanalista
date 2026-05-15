@@ -68,18 +68,18 @@
     line-height: 1.1;
     margin-bottom: 28px;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
-    text-shadow: 0 2px 14px rgba(74, 57, 64, 0.24);
+    color: var(--navy);
+    text-shadow: 0 2px 14px rgba(255, 255, 255, 0.35);
   }
 
   &__text {
     font-size: clamp(1rem, 1.2vw, 1.15rem);
-    color: #F5EDEB;
+    color: var(--navy);
     line-height: 1.8;
     max-width: 500px;
     margin-bottom: 40px;
     /* Reduced margin */
-    text-shadow: 0 1px 10px rgba(74, 57, 64, 0.18);
+    text-shadow: 0 1px 10px rgba(255, 255, 255, 0.35);
   }
 
   &__cta {
@@ -103,18 +103,56 @@
       font-size: 0.65rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: #FFFFFF;
+      color: var(--navy);
       opacity: 0.9;
-      text-shadow: 0 1px 10px rgba(74, 57, 64, 0.22);
+      text-shadow: 0 1px 10px rgba(255, 255, 255, 0.35);
     }
   }
 
   &__scroll-line {
     width: 1px;
     height: 40px;
-    background: #FFFFFF;
+    background: var(--navy);
     opacity: 0.7;
     animation: scrollPulse 2s ease-in-out infinite;
+  }
+
+  &__seal {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/59/Bandeira_de_Pernambuco.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px;
+    color: var(--navy);
+    font-family: var(--font-body);
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid rgba(28, 42, 68, 0.35);
+    box-shadow: 0 10px 26px rgba(74, 57, 64, 0.15);
+  }
+
+  &__seal::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(2px);
+  }
+
+  &__seal span {
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -136,6 +174,14 @@
   .hero {
     &__content {
       padding: 160px 48px 100px;
+    }
+
+    &__seal {
+      top: 24px;
+      right: 36px;
+      width: 140px;
+      height: 140px;
+      font-size: 0.6rem;
     }
   }
 }

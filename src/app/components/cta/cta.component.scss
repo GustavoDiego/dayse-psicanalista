@@ -93,4 +93,37 @@
     font-size: 0.95rem;
     line-height: 1.7;
   }
+
+  &__faq {
+    margin-top: 32px;
+  }
+
+  &__faq-list {
+    margin: 0 auto;
+    max-width: 640px;
+    display: grid;
+    gap: 18px;
+    text-align: left;
+  }
+
+  &__faq-item {
+    padding: 18px 20px;
+    border: 1px solid rgba(201, 168, 76, 0.12);
+    border-radius: 18px;
+    background: rgba(201, 168, 76, 0.04);
+    backdrop-filter: blur(6px);
+  }
+
+  &__faq-question {
+    font-size: 0.95rem;
+    color: var(--white);
+    letter-spacing: 0.03em;
+    margin-bottom: 8px;
+  }
+
+  &__faq-answer {
+    font-size: 0.9rem;
+    color: var(--white-muted);
+    line-height: 1.7;
+  }
 }
