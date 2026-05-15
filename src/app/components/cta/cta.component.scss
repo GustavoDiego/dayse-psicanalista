@@ -108,22 +108,35 @@
 
   &__faq-item {
     padding: 18px 20px;
-    border: 1px solid rgba(201, 168, 76, 0.12);
+    border: 1px solid rgba(28, 42, 68, 0.2);
     border-radius: 18px;
-    background: rgba(201, 168, 76, 0.04);
-    backdrop-filter: blur(6px);
+    background: var(--faq-bg);
+    backdrop-filter: none;
   }
 
   &__faq-question {
     font-size: 0.95rem;
-    color: var(--white);
+    color: var(--faq-text);
     letter-spacing: 0.03em;
     margin-bottom: 8px;
   }
 
   &__faq-answer {
     font-size: 0.9rem;
-    color: var(--white-muted);
+    color: var(--faq-text);
     line-height: 1.7;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta {
+    &__faq-list {
+      gap: 14px;
+    }
+
+    &__faq-item {
+      padding: 16px;
+      background: var(--faq-bg);
+    }
   }
 }
