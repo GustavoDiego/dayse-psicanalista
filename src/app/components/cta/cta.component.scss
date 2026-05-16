@@ -16,7 +16,7 @@
     position: relative;
     z-index: 1;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   &__line {
@@ -107,10 +107,10 @@
   }
 
   &__faq-item {
-    padding: 18px 20px;
-    border: 1px solid rgba(28, 42, 68, 0.2);
-    border-radius: 18px;
-    background: var(--faq-bg);
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
     backdrop-filter: none;
   }
 
@@ -125,6 +125,11 @@
     font-size: 0.9rem;
     color: var(--faq-text);
     line-height: 1.7;
+    margin: 0 0 1rem;
+  }
+
+  .cta__faq-answer:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -135,8 +140,8 @@
     }
 
     &__faq-item {
-      padding: 16px;
-      background: var(--faq-bg);
+      padding: 0;
+      background: transparent;
     }
   }
 }
