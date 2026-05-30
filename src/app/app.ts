@@ -22,4 +22,5 @@ import { FooterComponent } from './components/footer/footer.component';
 })
 export class App {
   protected readonly title = 'Dayse Silva';
+  whatsappLink = 'https://wa.me/5581996656998?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta.';
 }
