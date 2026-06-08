@@ -17,7 +17,7 @@ export class CredentialsComponent {
     },
     {
       year: 'Formação',
-      title: 'Associação Brasileira de Estudos Psicanalíticos (ABEP-Recife)',
+      title: 'Associação Brasileira de Estudos Psicanalíticos (ABEPE-Recife)',
       institution: 'Base teórica e técnica para acompanhar o sujeito no desvelar de suas verdades inconscientes'
     },
     {
