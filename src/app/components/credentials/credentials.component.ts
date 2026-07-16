@@ -17,7 +17,7 @@ export class CredentialsComponent {
     },
     {
       year: 'Formação',
-      title: 'Associação Brasileira de Estudos Psicanalíticos do estado de Pernambuco (ABEPE-Recife)',
+      title: 'Associação Brasileira de Estudos Psicanalíticos do Estado de Pernambuco (ABEPE-Recife)',
       institution: 'Base teórica e técnica para acompanhar o sujeito no desvelar de suas verdades inconscientes'
     },
     {
