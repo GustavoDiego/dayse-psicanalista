@@ -31,7 +31,7 @@ export class ReflectionsComponent {
       showTitle: false
     },
     {
-      text: 'O papel dos pais é ajudar a criança a transitar do Princípio do Prazer (quero tudo agora) para o Princípio da Realidade (preciso esperar).',
+      text: 'O papel dos pais é ajudar a criança a transitar do Princípio do Prazer (quero tudo agora) em o Princípio da Realidade (preciso esperar).',
       title: 'Sobre limites e acolhimento',
       showTitle: false
     },
